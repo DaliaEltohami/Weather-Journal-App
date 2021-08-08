@@ -30,3 +30,23 @@ app.listen(port,serverRunning);
 function serverRunning(){
     console.log(`Server is running on port: ${port}`);
 }
+
+// Make get route that returns the projectData object
+app.get('/all',returnProjectData)
+// Define returnProjectData function
+function returnProjectData(req,res){
+    res.send(projectData);
+}
+
+// Make post route that will add the received data to the projectData object,
+// the received data will be three pieces(temperature, date, user response) added from request body
+app.post('/postData',postAllData)
+// Define postAllData function
+function postAllData(req,res){
+    projectData = {
+        temperature : req.body.temperature,
+        date : req.body.date,
+        userResponse : req.body.userResponse
+    }
+    res.send();
+}
