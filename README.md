@@ -10,7 +10,7 @@
 
 ## Description
 
-Create an asynchronous web app that uses Web API from OpenWeatherMap Website and user data to dynamically update the UI for a Weather-Journal App.
+Create an asynchronous web app that uses Web API from OpenWeatherMap Website and user input data to dynamically update the UI for a Weather-Journal App.
 
 ## Used Languages 
 - HTML
