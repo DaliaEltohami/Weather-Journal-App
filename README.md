@@ -28,7 +28,9 @@ Create an asynchronous web app that uses Web API from OpenWeatherMap Website and
 ## Dependencies
 
 - [Starter code from Udacity](https://github.com/udacity/fend/tree/refresh-2019): The starter code has all the elements and CSS needed to complete the project, plus a little help getting started with the JavaScript.
-
+-  Express: "^4.17.1"
+-  Body-parser: "^1.19.0"
+-  cors: "^2.8.5"
 ## Author
 - **Dalia Eltohami**
 
