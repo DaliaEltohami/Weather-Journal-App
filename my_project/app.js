@@ -3,7 +3,7 @@
 
 /* Global Variables */
 // Define variable for baseURL of the webAPI
-const baseURL = "http://api.openweathermap.org/data/2.5/weather?q=";
+const baseURL = "https://api.openweathermap.org/data/2.5/weather?q=";
 // Define variable for API key
 const personalAPIKey = "&appid=e54731bc5eadb2080db2679daaabc6bf";
 //Define variable to get the element that will have the value of zip code
