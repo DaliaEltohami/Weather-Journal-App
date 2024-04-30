@@ -42,7 +42,7 @@ function performActions(e) {
     // chain another promise that will call the function to make post request to the app endpoint
     .then((data) => {
       // console.log(data.main.temp)
-      postEndPointData("https://localhost:8000/postData", {
+      postEndPointData("http://localhost:8000/postData", {
         temperature: data.main.temp,
         date: newDate,
         userResponse: userResponse,
@@ -50,7 +50,7 @@ function performActions(e) {
     })
     // Chain another promise to get the data from app endpoint
     .then(() => {
-      getEndPointData("https://localhost:8000/all")
+      getEndPointData("http://localhost:8000/all")
         // Chain another promise to update the UI after finishing the get request to the app endpoint using
         // the data returned from the previous promise
         .then((data) => {
