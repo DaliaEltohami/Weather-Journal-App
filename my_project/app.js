@@ -82,7 +82,7 @@ const postEndPointData = async (url = "", data = {}) => {
   try {
     const response = await fetch(url, {
       method: "POST",
-      credentials: "cross-origin",
+      //   credentials: "cross-origin",
       headers: {
         "Content-Type": "Application/json",
       },
