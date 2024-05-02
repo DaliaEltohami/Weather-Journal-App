@@ -52,13 +52,13 @@ function performActions(e) {
       );
     })
     // Chain another promise to get the data from app endpoint
-    .then(() => {
+    .then(
       getEndPointData(
         "https://weather-journal-app-server-uc5k.onrender.com/all"
-      );
+      )
       // Chain another promise to update the UI after finishing the get request to the app endpoint using
       // the data returned from the previous promise
-    })
+    )
     .then((data) => {
       updateUI(data);
     });
