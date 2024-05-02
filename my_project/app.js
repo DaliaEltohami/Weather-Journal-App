@@ -42,15 +42,20 @@ function performActions(e) {
     // chain another promise that will call the function to make post request to the app endpoint
     .then((data) => {
       // console.log(data.main.temp)
-      postEndPointData("http://localhost:8000/postData", {
-        temperature: data.main.temp,
-        date: newDate,
-        userResponse: userResponse,
-      });
+      postEndPointData(
+        "https://weather-journal-app-server-uc5k.onrender.com/postData",
+        {
+          temperature: data.main.temp,
+          date: newDate,
+          userResponse: userResponse,
+        }
+      );
     })
     // Chain another promise to get the data from app endpoint
     .then(() => {
-      getEndPointData("http://localhost:8000/all")
+      getEndPointData(
+        "https://weather-journal-app-server-uc5k.onrender.com/all"
+      )
         // Chain another promise to update the UI after finishing the get request to the app endpoint using
         // the data returned from the previous promise
         .then((data) => {
